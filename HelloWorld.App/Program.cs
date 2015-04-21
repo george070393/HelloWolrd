@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloWorld.Lib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace HelloWorld.App
     {
         static void Main(string[] args)
         {
+            var greeter = new Greeter();
+            var greeting = greeter.GetGreeting("Victor");
             Console.WriteLine("Hello World!");
        }
     }
